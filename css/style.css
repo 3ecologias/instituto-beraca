@@ -10,8 +10,9 @@ Primary use:    MultiPurpose Template
 
 @import "font-awesome.min.css";
 @import "et-line.css";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400italic,400,300,400);*/
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,400);
+@import url(https://fonts.googleapis.com/css?family=Lora);
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -86,7 +87,7 @@ Primary use:    MultiPurpose Template
 [Typography]
 
 Body:               14px/1.6 "Open Sans", arial, sans-serif;
-Headers:            Dosis, arial, sans-serif;
+Headers:            Open Sans, arial, sans-serif;
 Serif:              "Times New Roman", Times, serif;
 Section Title:      35px/1.3 "Open Sans", arial, sans-serif;
 Section Heading:    24px/1.3 "Open Sans", arial, sans-serif;
@@ -262,11 +263,11 @@ img:not([draggable]), embed, object, video{
     -moz-border-radius: 50%;
     border-radius: 50%;
 
-    -webkit-animation: spinner 700ms infinite linear;
-    -moz-animation: spinner 700ms infinite linear;
-    -ms-animation: spinner 700ms infinite linear;
-    -o-animation: spinner 700ms infinite linear;
-    animation: spinner 700ms infinite linear;
+    -webkit-animation: spinner 400ms infinite linear;
+    -moz-animation: spinner 400ms infinite linear;
+    -ms-animation: spinner 400ms infinite linear;
+    -o-animation: spinner 400ms infinite linear;
+    animation: spinner 400ms infinite linear;
 
     z-index: 100001;
 }
@@ -351,8 +352,8 @@ img:not([draggable]), embed, object, video{
 
 body{
     color: #111;
-    font-size: 14px;
-    font-family: "Open Sans", arial, sans-serif;
+    font-size: 1.2em;
+    font-family: "Dosis", Georgia, serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -379,7 +380,7 @@ h2{
     font-size: 28px;
 }
 h6{
-    font-weight: 700;
+    font-weight: 400;
 }
 p{
     margin: 0 0 2em 0;
@@ -436,12 +437,13 @@ hr.black{
     letter-spacing: 1px;
 }
 .font-alt{
-    font-family: Dosis, arial, sans-serif;
+    font-family: "Lora", arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    font-weight: 400;
 }
 .serif{
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Dosis", georgia, serif;
     font-style: italic;
     font-weight: normal;
 }
@@ -449,7 +451,7 @@ hr.black{
     font-weight: normal;
 }
 .strong{
-    font-weight: 700 !important;
+    font-weight: 400 !important;
 }
 .lead{
     margin: 1em 0 2em 0;
@@ -1199,7 +1201,7 @@ a.btn-mod:focus{
     margin-top: 0;
     position: relative;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: rgba(255,255,255, .7);
@@ -1247,8 +1249,8 @@ a.btn-mod:focus{
 .hs-line-8{
     margin-top: 0;
     position: relative;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 700;
     letter-spacing: 0.3em;
     line-height: 1.2;
     opacity: .75;
@@ -1466,7 +1468,7 @@ a.btn-mod:focus{
 }
 .logo,
 a.logo:hover{
-    font-family: Dosis, arial, sans-serif;
+    font-family: "Lora", arial, sans-serif;
     font-size: 18px;
     font-weight: 400 !important;
     text-transform: uppercase;
@@ -1517,12 +1519,13 @@ a.logo:hover{
 .inner-nav ul{
     float: right;
     margin: auto;
-    font-size: 11px;
+    font-size: 1.2em;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.3;
+    font-family: "Lora", sans-serif
 }
 .inner-nav ul li {
     float: left;
@@ -1654,7 +1657,7 @@ a.logo:hover{
     float: none;
 }
 .mn-group-title{
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     color: #fff !important;
 }
@@ -2667,7 +2670,7 @@ a.logo:hover{
 
 .section-title {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 2.5em;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -2713,7 +2716,7 @@ a.logo:hover{
     background: #111;
 }
 .section-text{
-    font-size: 15px;
+    font-size: 1.3em;
     font-weight: 300;
     color: #777;
     line-height: 1.7;
@@ -2781,7 +2784,7 @@ a.logo:hover{
     min-height: 800px;
 }
 .fixed-height-medium{
-    min-height: 700px;
+    min-height: 400px;
 }
 .fixed-height-small{
     min-height: 600px;
@@ -3151,7 +3154,7 @@ a.logo:hover{
     top: 0;
     left: -50px;
     font-size: 120px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     line-height: 1;
     color: rgba(0,0,0, .025);
@@ -3606,7 +3609,7 @@ a.logo:hover{
     margin: 0 0 10px 0;
     padding: 0;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -3669,19 +3672,19 @@ a.logo:hover{
     border-bottom: 1px solid transparent;
 }
 .banner-heading{
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: rgba(255,255,255, 0.9);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2.6em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .banner-decription{
     margin-bottom: 35px;
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 1.8em;
+    font-weight: 400;
     color: rgba(255,255,255, .7);
 }
 
@@ -3694,6 +3697,7 @@ a.logo:hover{
 }
 
 
+
 /* ==============================
    Testimonial
    ============================== */
@@ -3704,7 +3708,7 @@ a.logo:hover{
     background: none;
     border: none;
     text-align: center;
-    font-family: "Open Sans", arial, sans-serif;
+    font-family: "Dosis", serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -4376,7 +4380,7 @@ a.blog-item-more:hover{
 
 .pagination{
     font-size: 13px;
-    font-family: "Open Sans", arial, sans-serif;
+    font-family: "Dosis", serif;
 }
 .pagination a{
     display: inline-block;
@@ -4453,7 +4457,7 @@ a.blog-item-more:hover{
 .comment-item-data{
     margin: 0 0 5px;
     text-transform: uppercase;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Dosis", serif;
     font-size: 12px;
     color: #777;
 }
@@ -4474,7 +4478,7 @@ a.blog-item-more:hover{
     display: inline-block;
     margin-right: 20px;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 400;
 }
 .comment-author a{
     color: #999;
@@ -4735,7 +4739,7 @@ table.shopping-cart-table tr td{
     position: relative;
     margin-bottom: 40px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -4765,7 +4769,7 @@ table.shopping-cart-table tr td{
 
 }
 .pricing-num sup{
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Dosis", serif;
     font-size: 18px;
     font-weight: 400;
     position: relative;
@@ -5569,7 +5573,7 @@ section:hover .small-item-carousel .owl-next{
     color: white;
     padding: 2px 3px;
     font-size: 9px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -5586,7 +5590,7 @@ section:hover .small-item-carousel .owl-next{
     right: -5px;
     color: rgba(255,255,255, .85);
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -5792,7 +5796,7 @@ section:hover .small-item-carousel .owl-next{
     display: block;
     font-size: 12px;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .db-descr{
