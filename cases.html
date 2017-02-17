@@ -21,6 +21,15 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
 
+        <!-- Map -->
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+        <style>
+          body { margin:0; padding:0; }
+          #map { position:absolute; top:0; bottom:0; width:100%; }
+        </style>
+
     </head>
     <body class="appear-animate">
 
@@ -34,7 +43,7 @@
         <div class="page" id="top">
 
           <!-- Navigation panel -->
-          <nav class="main-nav dark transparent stick-fixed">
+          <nav class="main-nav white transparent stick-fixed">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
@@ -63,7 +72,7 @@
 
 
             <!-- Head Section -->
-            <section class="page-section bg-dark-alfa-30 parallax-2" data-background="images/full-width-images/section-bg-18.jpg">
+            <section class="page-section bg-dark-alfa-30 parallax-3" data-background="images/beraca_aloe_vera.jpg">
                 <div class="relative container align-left">
 
                     <div class="row">
@@ -87,6 +96,26 @@
             <section class="page-section">
                 <div class="container relative">
 
+                  <!-- Map Section -->
+                  <div class="row">
+                    <div id='mapbox-control' class="col-md-7">
+                      <div id='map'></div>
+                    </div>
+                    <script>
+                      mapboxgl.accessToken = 'pk.eyJ1IjoicnVpeiIsImEiOiJrVVcwQXFnIn0.6wBy9NLB7MVzx1_YMTHC6g';
+                      var map = new mapboxgl.Map({
+                        container: 'map', // container id
+                        style: 'mapbox://styles/ruiz/ciz9vm4m3004q2rnqesa11o4w', //stylesheet location
+                        center: [-58.253,-14.380], // starting position
+                        zoom: 2.9 // starting zoom
+                      });
+                    </script>
+                    <div id='mapbox-side' class="col-md-4">
+                      <h3 class="hs-line-11 font-alt mb-20 mb-xs-0">
+                          Diversas comunidades recebem mais texto complementar
+                      </h3>
+                    </div>
+                  </div>
                     <!-- Works Filter -->
                     <div class="works-filter font-alt align-center">
                         <a href="#" class="filter active" data-filter="*">Todos</a>
@@ -101,14 +130,14 @@
 
                         <!-- Work Item (Lightbox) -->
                         <li class="work-item mix photography">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
+                            <a href="images/beraca_comunidade_agua_boa.jpg" class="work-lightbox-link mfp-image">
                                 <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
+                                    <img src="images/beraca_comunidade_agua_boa.jpg" alt="Work" />
                                 </div>
                                 <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
+                                    <h3 class="work-title">Comunidade Água Boa</h3>
                                     <div class="work-descr">
-                                        Lightbox
+                                        Ilha do Marajó
                                     </div>
                                 </div>
                             </a>
@@ -119,12 +148,12 @@
                         <li class="work-item mix branding design">
                             <a href="portfolio-single-1.html" class="work-ext-link">
                                 <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/projects-2.jpg" alt="Work" />
+                                    <img class="work-img" src="images/beraca_comunidade_cabal.jpg" alt="Work" />
                                 </div>
                                 <div class="work-intro">
-                                    <h3 class="work-title">Vase 3D</h3>
+                                    <h3 class="work-title">Comunidade do Cabal</h3>
                                     <div class="work-descr">
-                                        External Page
+                                        Ilha do Marajó
                                     </div>
                                 </div>
                             </a>
@@ -135,7 +164,7 @@
                         <li class="work-item mix branding">
                             <a href="portfolio-single-1.html" class="work-ext-link">
                                 <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/projects-3.jpg" alt="Work" />
+                                    <img class="work-img" src="images/beraca_comunidade_joanes.jpg" alt="Work" />
                                 </div>
                                 <div class="work-intro">
                                     <h3 class="work-title">Boy in T-shirt</h3>
@@ -151,12 +180,12 @@
                         <li class="work-item mix design photography">
                             <a href="portfolio-single-1.html" class="work-ext-link">
                                 <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/projects-4.jpg" alt="Work" />
+                                    <img class="work-img" src="images/beraca_comunidade_joanes.jpg" alt="Work" />
                                 </div>
                                 <div class="work-intro">
-                                    <h3 class="work-title">Space</h3>
+                                    <h3 class="work-title">Comunidade Joanes</h3>
                                     <div class="work-descr">
-                                        External Page
+                                        Ilha do Marajó
                                     </div>
                                 </div>
                             </a>
@@ -167,12 +196,12 @@
                         <li class="work-item mix design">
                             <a href="portfolio-single-1.html" class="work-ext-link">
                                 <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/projects-5.jpg" alt="Work" />
+                                    <img class="work-img" src="images/beraca_comunidade_jobim.jpg" alt="Work" />
                                 </div>
                                 <div class="work-intro">
-                                    <h3 class="work-title">Model</h3>
+                                    <h3 class="work-title">Comunidade Jobim</h3>
                                     <div class="work-descr">
-                                        External Page
+                                        Ilha do Marajó
                                     </div>
                                 </div>
                             </a>
@@ -181,14 +210,14 @@
 
                         <!-- Work Item (Lightbox) -->
                         <li class="work-item mix design branding">
-                            <a href="images/portfolio/full-project-3.jpg" class="work-lightbox-link mfp-image">
+                            <a href="images/beraca_comunidade_santa_luzia.jpg" class="work-lightbox-link mfp-image">
                                 <div class="work-img">
-                                    <img src="images/portfolio/projects-6.jpg" alt="Work" />
+                                    <img src="images/beraca_comunidade_santa_luzia.jpg" alt="Work" />
                                 </div>
                                 <div class="work-intro">
-                                    <h3 class="work-title">Young Man</h3>
+                                    <h3 class="work-title">Comunidade Santa Luzia</h3>
                                     <div class="work-descr">
-                                        Lightbox
+                                        Ilha do Marajó
                                     </div>
                                 </div>
                             </a>
