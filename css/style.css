@@ -977,7 +977,7 @@ a.btn-mod:focus{
 
 .form-tip{
     font-size: 11px;
-    color: #aaa;
+    color: #000;
 }
 .form-tip .fa{
     font-size: 12px;
@@ -3113,7 +3113,7 @@ a.logo:hover{
 }
 .alt-features-title{
     margin-bottom: 21px;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.4em;
@@ -5172,6 +5172,10 @@ section:hover .small-item-carousel .owl-next{
     margin-bottom: 12px;
     font-size: 48px;
     letter-spacing: 0;
+}
+.alt-tabs-icon img {
+  width: 46%;
+  opacity: 0.9;
 }
 .tpl-minimal-tabs-cont{
 }
