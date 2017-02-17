@@ -66,7 +66,7 @@ Primary use:    MultiPurpose Template
     27.9. Intro page
 28. Special demos
 29. Bootstrap multicolumn grid
-
+30. Map
 
 /*------------------------------------------------------------------
 # [Color codes]
@@ -650,7 +650,7 @@ a.btn-mod:focus{
 .btn-mod.btn-medium{
     height: auto;
     padding: 8px 37px;
-    font-size: 12px;
+    font-size: 1.4em;
 }
 .btn-mod.btn-large{
     height: auto;
@@ -1446,6 +1446,7 @@ a.btn-mod:focus{
 .nav-logo-wrap{
     float: left;
     margin-right: 20px;
+    margin-left: 20px;
 }
 .nav-logo-wrap .logo{
     display: table-cell;
@@ -1460,7 +1461,7 @@ a.btn-mod:focus{
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 .nav-logo-wrap .logo img{
-    max-height: 100%;
+    max-height: 92%;
 }
 .nav-logo-wrap .logo:before,
 .nav-logo-wrap .logo:after{
@@ -1519,7 +1520,7 @@ a.logo:hover{
 .inner-nav ul{
     float: right;
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1869,6 +1870,59 @@ a.logo:hover{
 /*
  * Dark panel style
  */
+ .main-nav.white{
+     background-color: rgba(255,255,255, .95);
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow:  none;
+ }
+
+ .main-nav.white .inner-nav ul > li > a{
+     color: rgba(10,10,10, .7);
+ }
+ .main-nav.white .inner-nav ul > li > a:hover,
+ .main-nav.white .inner-nav ul > li > a.active{
+     color: #000;
+ }
+
+ .main-nav.white .mobile-nav{
+     background-color: transparent;
+     border-color: transparent;
+     color: rgba(255,255,255, .9);
+ }
+ .main-nav.white .mobile-nav:hover,
+ .main-nav.white .mobile-nav.active{
+     color: #000;
+ }
+
+ .main-nav.mobile-on.white .inner-nav{
+     border-top: 1px solid rgba(100,100,100, .4);
+ }
+
+ .main-nav.white .logo,
+ .main-nav.white a.logo:hover{
+     font-size: 18px;
+     font-weight: 800;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: rgba(10,10,10, .9);
+ }
+
+ .main-nav.white .mn-sub{
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow:  none;
+ }
+
+ .main-nav.white .mn-soc-link{
+     border: 1px solid rgba(255,255,255, .2);
+ }
+ .main-nav.white .mn-soc-link:hover{
+     border: 1px solid rgba(255,255,255, .3);
+ }
+
+
+
 
 .main-nav.dark{
     background-color: rgba(10,10,10, .95);
@@ -1877,6 +1931,7 @@ a.logo:hover{
     -moz-box-shadow: none;
     box-shadow:  none;
 }
+
 .main-nav.dark .inner-nav ul > li > a{
     color: rgba(255,255,255, .7);
 }
@@ -1926,7 +1981,7 @@ a.logo:hover{
  */
 
 .main-nav.transparent{
-    background: transparent !important;
+    background: rgba(255,255,255, .3) !important;
 }
 .main-nav.js-transparent{
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -6437,4 +6492,15 @@ section:hover .small-item-carousel .owl-next{
     .multi-columns-row .col-lg-3:nth-child(4n + 5) { clear: left; }
     .multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
     .multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
+}
+
+
+/* MAP SECTION */
+#map {
+  margin-bottom: 6em;
+}
+#mapbox-control {
+  height: 50vh;
+  margin-bottom: 1em;
+  margin-right: 3em;
 }
