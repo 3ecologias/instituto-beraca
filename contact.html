@@ -20,13 +20,32 @@
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+        <style>
+          body { margin:0; padding:0; }
+          #map { position:absolute; top:0; bottom:0; width:100%; }
+          #marker {
+            background-image: url('images/icons/15799.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+          .mapboxgl-popup {
+              max-width: 200px;
+          }
+
+        </style>
 
     </head>
     <body class="appear-animate">
 
         <!-- Page Loader -->
         <div class="page-loader">
-            <div class="loader">Loading...</div>
+            <div class="loader">Carregando...</div>
         </div>
         <!-- End Page Loader -->
 
@@ -69,9 +88,9 @@
                     <div class="row">
 
                         <div class="col-md-8">
-                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Contact</h1>
+                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Contatos</h1>
                             <div class="hs-line-4 font-alt">
-                                We’re always open to talk to good people
+                                Nós estamos abertos para o diálogo
                             </div>
                         </div>
                     </div>
@@ -86,7 +105,7 @@
                 <div class="container relative">
 
                     <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Have a questions?
+                        Gostaria de propor algo?
                     </h2>
 
                     <div class="row mb-60 mb-xs-40">
@@ -101,10 +120,10 @@
                                             <i class="fa fa-phone"></i>
                                         </div>
                                         <div class="ci-title font-alt">
-                                            Call Us
+                                            Ligue
                                         </div>
                                         <div class="ci-text">
-                                            +61 3 8376 6284
+                                            +55 11 2643 5000
                                         </div>
                                     </div>
                                 </div>
@@ -117,10 +136,11 @@
                                             <i class="fa fa-map-marker"></i>
                                         </div>
                                         <div class="ci-title font-alt">
-                                            Address
+                                            Endereço
                                         </div>
                                         <div class="ci-text">
-                                            245 Quigley Blvd, Ste K
+                                          Avenida das Nações Unidas, 18001 - 6° andar
+                                          04795-900 | São Paulo SP – Brasil
                                         </div>
                                     </div>
                                 </div>
@@ -136,7 +156,7 @@
                                             Email
                                         </div>
                                         <div class="ci-text">
-                                            <a href="mailto:support@bestlooker.pro">support@bestlooker.pro</a>
+                                            <a href="mailto:contato@institutoberaca.org">contato@institutoberaca.org</a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +178,7 @@
 
                                         <!-- Name -->
                                         <div class="form-group">
-                                            <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                                            <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Nome" pattern=".{3,100}" required>
                                         </div>
 
                                         <!-- Email -->
@@ -172,7 +192,7 @@
 
                                         <!-- Message -->
                                         <div class="form-group">
-                                            <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Mensagem"></textarea>
                                         </div>
 
                                     </div>
@@ -185,7 +205,7 @@
 
                                         <!-- Inform Tip -->
                                         <div class="form-tip pt-20">
-                                            <i class="fa fa-info-circle"></i> All the fields are required
+                                            <i class="fa fa-info-circle"></i> Todos os campos são necessários
                                         </div>
 
                                     </div>
@@ -194,7 +214,7 @@
 
                                         <!-- Send Button -->
                                         <div class="align-right pt-10">
-                                            <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn">Submit Message</button>
+                                            <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn">Enviar a mensagem</button>
                                         </div>
 
                                     </div>
@@ -217,22 +237,36 @@
 
             <!-- Google Map -->
             <div class="google-map">
-
-                <div data-address="Belt Parkway, Queens, NY, United States" id="map-canvas"></div>
-
-                <div class="map-section">
-
-                    <div class="map-toggle">
-                        <div class="mt-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="mt-text font-alt">
-                            <div class="mt-open">Open the map <i class="fa fa-angle-down"></i></div>
-                            <div class="mt-close">Close the map <i class="fa fa-angle-up"></i></div>
-                        </div>
-                    </div>
-
+                <div id='mapbox-control' class="col-sm-12">
+                  <div id='map'></div>
                 </div>
+                  <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoicnVpeiIsImEiOiJrVVcwQXFnIn0.6wBy9NLB7MVzx1_YMTHC6g';
+                    var map = new mapboxgl.Map({
+                      container: 'map', // container id
+                      style: 'mapbox://styles/ruiz/ciz9vm4m3004q2rnqesa11o4w', //stylesheet location
+                      center: [-46.710247,-23.6254281],// starting position
+                      zoom: 13 // starting zoom
+                    });
+                    map.scrollZoom.disable();
+                    var beraca = [-46.710247, -23.6254281];
+                    // create the popup
+                    var popup = new mapboxgl.Popup({offset: 25})
+                        .setText('Avenida das Nações Unidas, 18001 - 6° andar 04795-900 | São Paulo SP – Brasil');
+
+                    // create DOM element for the marker
+                    var el = document.createElement('div');
+                    el.id = 'marker';
+
+                    // create the marker
+                    new mapboxgl.Marker(el, {offset:[-46.710247, -23.6254281]})
+                        .setLngLat(beraca)
+                        .setPopup(popup) // sets a popup on this marker
+                        .addTo(map);
+
+                  </script>
+            </div>
+
 
             </div>
             <!-- End Google Map -->
