@@ -10,9 +10,7 @@ Primary use:    MultiPurpose Template
 
 @import "font-awesome.min.css";
 @import "et-line.css";
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400italic,400,300,400);*/
-@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,400);
-@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -86,12 +84,12 @@ Primary use:    MultiPurpose Template
 /*------------------------------------------------------------------
 [Typography]
 
-Body:               14px/1.6 "Open Sans", arial, sans-serif;
-Headers:            Open Sans, arial, sans-serif;
+Body:               14px/1.6 "Open Sans", sans-serif;
+Headers:            Open Sans, sans-serif;
 Serif:              "Times New Roman", Times, serif;
-Section Title:      35px/1.3 "Open Sans", arial, sans-serif;
-Section Heading:    24px/1.3 "Open Sans", arial, sans-serif;
-Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
+Section Title:      35px/1.3 "Open Sans", sans-serif;
+Section Heading:    24px/1.3 "Open Sans", sans-serif;
+Section Text:       15px/1.7 "Open Sans", sans-serif;
 
 -------------------------------------------------------------------*/
 
@@ -353,7 +351,7 @@ img:not([draggable]), embed, object, video{
 body{
     color: #111;
     font-size: 1.2em;
-    font-family: "Dosis", Georgia, serif;
+    font-family: "Dosis", sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -400,7 +398,7 @@ blockquote{
 blockquote p{
     margin-bottom: 1em;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     line-height: 1.6;
 }
@@ -437,13 +435,13 @@ hr.black{
     letter-spacing: 1px;
 }
 .font-alt{
-    font-family: "Lora", arial, sans-serif;
+    font-family: "Dosis", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-weight: 400;
+    font-weight: 600;
 }
 .serif{
-    font-family: "Dosis", georgia, serif;
+    font-family: "Dosis", sans-serif;
     font-style: italic;
     font-weight: normal;
 }
@@ -460,7 +458,7 @@ hr.black{
 }
 .text{
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: #5f5f5f;
     line-height: 1.8;
 }
@@ -1230,7 +1228,7 @@ a.btn-mod:focus{
     margin-top: 0;
     position: relative;
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2;
     opacity: .35;
 }
@@ -1241,7 +1239,7 @@ a.btn-mod:focus{
     margin-top: 0;
     position: relative;
     font-size: 64px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.2;
@@ -1250,7 +1248,7 @@ a.btn-mod:focus{
     margin-top: 0;
     position: relative;
     font-size: 1.35em;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.3em;
     line-height: 1.2;
     opacity: .75;
@@ -1263,7 +1261,7 @@ a.btn-mod:focus{
     margin-top: 0;
     position: relative;
     font-size: 96px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.2;
@@ -1469,9 +1467,9 @@ a.btn-mod:focus{
 }
 .logo,
 a.logo:hover{
-    font-family: "Lora", arial, sans-serif;
+    font-family: "Dosis", sans-serif;
     font-size: 18px;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-decoration: none;
@@ -1521,12 +1519,12 @@ a.logo:hover{
     float: right;
     margin: auto;
     font-size: 1.15em;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.3;
-    font-family: "Lora", sans-serif
+    font-family: "Dosis", sans-serif
 }
 .inner-nav ul li {
     float: left;
@@ -1902,7 +1900,7 @@ a.logo:hover{
  .main-nav.white .logo,
  .main-nav.white a.logo:hover{
      font-size: 18px;
-     font-weight: 800;
+     font-weight: 600;
      text-transform: uppercase;
      text-decoration: none;
      color: rgba(10,10,10, .9);
@@ -1957,7 +1955,7 @@ a.logo:hover{
 .main-nav.dark .logo,
 .main-nav.dark a.logo:hover{
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     color: rgba(255,255,255, .9);
@@ -2425,7 +2423,7 @@ a.logo:hover{
     margin: 0 0 30px 0;
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.3em;
 }
 .section-icon{
@@ -2723,6 +2721,13 @@ a.logo:hover{
 .bg-purple{ background-color: #375acc !important; }
 .bg-red{ background-color: #e13939 !important; }
 
+.bg-yellow-dg{
+  background: #D38312; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #D38312 , #A83279); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #D38312 , #A83279); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .section-title {
     margin-bottom: 15px;
     font-size: 2.5em;
@@ -2772,7 +2777,7 @@ a.logo:hover{
 }
 .section-text{
     font-size: 1.3em;
-    font-weight: 300;
+    font-weight: 400;
     color: #777;
     line-height: 1.7;
 }
@@ -2926,7 +2931,7 @@ a.logo:hover{
     padding-left: 55px;
     padding-top: 3px;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     color: #999;
 
     -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -3012,7 +3017,7 @@ a.logo:hover{
     left: 0;
     padding: 20px 23px 55px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #777;
     text-align: center;
     z-index: 2;
@@ -3131,7 +3136,7 @@ a.logo:hover{
 
 .features-descr{
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     color: rgba(255,255,255, .75);
 }
 
@@ -3176,7 +3181,7 @@ a.logo:hover{
 .alt-features-descr {
     color: #777;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.86
 }
 
@@ -3235,7 +3240,7 @@ a.logo:hover{
 .benefits-descr{
     position: relative;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     color: #777;
 }
 
@@ -3291,7 +3296,7 @@ a.logo:hover{
 }
 .count-number{
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.3;
     text-align: center;
 }
@@ -3730,7 +3735,7 @@ a.logo:hover{
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 2.6em;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
@@ -3766,7 +3771,7 @@ a.logo:hover{
     font-family: "Dosis", serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0;
     opacity: .85;
 }
@@ -3774,7 +3779,8 @@ a.logo:hover{
     font-size: 18px;
 }
 .testimonial-author{
-
+  color:white;
+  font-weight: 700;
 }
 
 /*
@@ -3872,7 +3878,7 @@ a.logo:hover{
     margin-bottom: 22px;
     color: #777;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.75;
 }
 
@@ -3998,7 +4004,7 @@ a.logo:hover{
 }
 .ci-text{
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*
@@ -4259,7 +4265,7 @@ a.link-to-top{
     top: 0px;
     left: -130px;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -4331,7 +4337,7 @@ a.link-to-top{
 }
 .blog-item-body{
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: #5f5f5f;
     line-height: 1.8;
 }
@@ -4382,7 +4388,7 @@ a.blog-item-more:hover{
     background: #f8f8f8;
     padding: 17px 20px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: 0;
 }
@@ -4819,7 +4825,7 @@ table.shopping-cart-table tr td{
 }
 .pricing-num{
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1;
 
 }
@@ -5463,7 +5469,6 @@ section:hover .small-item-carousel .owl-next{
     position: relative;
     overflow: visible;
     background-color: #222;
-    font-size: 11px;
     color: #000;
     text-align: left;
     -moz-box-sizing: border-box;
