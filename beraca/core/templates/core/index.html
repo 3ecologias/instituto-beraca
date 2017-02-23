@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,14 +14,14 @@
         <link rel="shortcut icon" href="images/favicon.png">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-responsive.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style-responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vertical-rhythm.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
     </head>
     <body class="appear-animate">
 
@@ -38,7 +39,7 @@
             <div class="home-section fullwidth-slider-fade bg-dark" id="home">
 
               <!-- Slide Item -->
-              <section class="home-section bg-scroll bg-dark-lighter" data-background="images/beraca_agua_boa_buriti.jpg">
+              <section class="home-section bg-scroll bg-dark-lighter" data-background="{% static 'images/beraca_agua_boa_buriti.jpg' %}">
                   <div class="js-height-full container">
 
                       <!-- Hero Content -->
@@ -66,7 +67,7 @@
               <!-- End Slide Item -->
 
             <!-- Slide Item -->
-                <section class="home-section bg-scroll bg-dark-lighter" data-background="images/beraca_bacabal_social.jpg">
+                <section class="home-section bg-scroll bg-dark-lighter" data-background="{% static 'images/beraca_bacabal_social.jpg' %}">
                     <div class="js-height-full container">
 
                         <!-- Hero Content -->
@@ -94,7 +95,7 @@
                 <!-- End Slide Item -->
 
                 <!-- Slide Item -->
-                <section class="home-section bg-scroll bg-dark-lighter" data-background="images/beraca_rio_jangada.jpg">
+                <section class="home-section bg-scroll bg-dark-lighter" data-background="{% static 'images/beraca_rio_jangada.jpg' %}">
                     <div class="js-height-full container">
 
                         <!-- Hero Content -->
@@ -131,7 +132,7 @@
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
                         <a href="#top" class="logo">
-                            <img src="images/logo-white.png" alt="" />
+                            <img src="{% static 'images/logo-white.png' %}" alt="" />
                         </a>
                     </div>
                     <div class="mobile-nav">
@@ -188,7 +189,7 @@
                     </div>
 
                     <div class="align-center">
-                        <a href="about.html" class="section-more font-alt">Conheça o Instituto Beraca<i class="fa fa-angle-right"></i></a>
+                        <a href="/about" class="section-more font-alt">Conheça o Instituto Beraca<i class="fa fa-angle-right"></i></a>
                     </div>
 
                 </div>
@@ -213,7 +214,7 @@
                             <a href="#service-cadeia-produtiva" data-toggle="tab">
 
                                 <div class="alt-tabs-icon">
-                                    <img src="images/icons/108103.png">
+                                    <img src="{% static 'images/icons/108103.png' %}">
                                 </div>
 
                                 Gestão de Cadeia Produtiva
@@ -223,7 +224,7 @@
                             <a href="#service-reparticao" data-toggle="tab">
 
                                 <div class="alt-tabs-icon">
-                                    <img src="images/icons/157762.png">
+                                    <img src="{% static 'images/icons/157762.png' %}">
                                 </div>
 
                                 Acesso e Repartição de Benefícios
@@ -233,7 +234,7 @@
                             <a href="#service-responsabilidade" data-toggle="tab">
 
                                 <div class="alt-tabs-icon">
-                                    <img src="images/icons/110546.png">
+                                    <img src="{% static 'images/icons/110546.png' %}">
                                 </div>
 
                                 Responsabilidade Social Corporativa
@@ -243,7 +244,7 @@
                             <a href="#service-advocacy" data-toggle="tab">
 
                                 <div class="alt-tabs-icon">
-                                    <img src="images/icons/108106.png">
+                                    <img src="{% static 'images/icons/108106.png' %}">
                                 </div>
 
                                 Advocacy e Publicações
@@ -253,7 +254,7 @@
                             <a href="#service-projetos" data-toggle="tab">
 
                                 <div class="alt-tabs-icon">
-                                    <img src="images/icons/108109.png">
+                                    <img src="{% static 'images/icons/108109.png' %}">
                                 </div>
 
                                 Projetos Estratégicos
@@ -448,7 +449,7 @@
 
 
             <!-- Call Action Section -->
-            <section class="page-section pt-0 pb-0 banner-section bg-dark-alfa-30" data-background="images/beraca_sementes.jpg" id="portfolio">
+            <section class="page-section pt-0 pb-0 banner-section bg-dark-alfa-30" data-background="{% static 'images/beraca_sementes.jpg' %}" id="portfolio">
                 <div class="container relative">
 
                     <div class="row">
@@ -494,7 +495,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="blog-single-sidebar-right.html"><img src="images/beraca_agua_boa_pesca_rede.jpg" alt="" /></a>
+                                <a href="blog-single-sidebar-right.html"><img src="{% static 'images/beraca_agua_boa_pesca_rede.jpg' %}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
@@ -521,7 +522,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="blog-single-sidebar-right.html"><img src="images/beraca_bacabal.jpg" alt="" /></a>
+                                <a href="blog-single-sidebar-right.html"><img src="{% static 'images/beraca_bacabal.jpg' %}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
@@ -548,7 +549,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="news.html"><img src="images/beraca_atua_agua_boa.jpg" alt="" /></a>
+                                <a href="news.html"><img src="{% static 'images/beraca_atua_agua_boa.jpg' %}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
@@ -579,7 +580,7 @@
 
 
             <!-- Newsletter Section -->
-            <section class="small-section bg-dark-alfa-30" data-background="images/beraca_newsletter.jpg">
+            <section class="small-section bg-dark-alfa-30" data-background="{% static 'images/beraca_newsletter.jpg' %}">
                 <div class="container relative">
 
                     <form class="form align-center" id="mailchimp">
@@ -753,7 +754,7 @@
 
                     <!-- Footer Logo -->
                     <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-                        <a href="#top"><img src="images/logo-footer.png" width="78" height="36" alt="" /></a>
+                        <a href="#top"><img src="{% static 'images/logo-footer.png' %}" width="78" height="36" alt="" /></a>
                     </div>
                     <!-- End Footer Logo -->
 
@@ -800,29 +801,29 @@
 
 
         <!-- JS -->
-        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/SmoothScroll.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
-        <script type="text/javascript" src="js/jquery.countTo.js"></script>
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-        <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="js/gmap3.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-        <script type="text/javascript" src="js/all.js"></script>
-        <script type="text/javascript" src="js/contact-form.js"></script>
-        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.localScroll.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.viewport.mini.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/gmap3.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.simple-text-rotator.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/all.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/contact-form.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
     </body>
